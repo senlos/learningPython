@@ -366,6 +366,8 @@ newlist = [num for num in numbers if num > 0 ]
 print(newlist)
 
 # multiple function arguments
+# arguments more than 3 will be treated as a list
+# pointer directs to the argument list
 def foo(a,b,c, *theRestArguments):
     print('The first argument is %s' % a)
     print('The second argument is %s' % b)
@@ -374,6 +376,7 @@ def foo(a,b,c, *theRestArguments):
 foo(1,2,3,4,5,6,7)
 
 # sending arguments by keywords, then order doesn't matter.
+# pointer of pointer
 def bar(first, second, third, ** option):
     if option.get('method') == "sum":
         print('Sum is %d' % (first + second + third))
@@ -381,3 +384,20 @@ def bar(first, second, third, ** option):
         return first
 result = bar(1,2,3, method = 'sum', order = 'first')
 print(result)
+
+# Regular Expressions
+# regexp, regex, re for shortage
+# matching patterns in text
+# It's powerful but hard to lean. When have to use it, find some existing pattern.
+# Or build from simple pattern and refine.
+
+# except handling. One way to handling except, is to use try/except blocks.
+# here's a list
+a =[1,2,3,4,5]
+# Wanted to print a list inculdes 20 items
+# It will cause an error because a lack of items
+for i in range(20):
+    try:
+        print(a[i])
+    except:
+        print('0')

@@ -10,3 +10,5 @@ press "Ctrl + Alt + b" to run. Selection or line run not support python yet.
 Accelerate your learning process is to come across fastly.
 
 a desirable learning path should go be top-down, from new to old, from advance to basic. To take more about the whole picture, and wiser to descide what detail needed to look in.
+
+[learning regexp](https://regexr.com/)
